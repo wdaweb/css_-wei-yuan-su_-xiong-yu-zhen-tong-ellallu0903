@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW_syringe</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .middle {
+            width: 60px;
+            height: 130px;
+            background: black;
+            position: relative;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 4;
+        }
+
+        .long {
+            width: 570px;
+            height: 128px;
+            background: white;
+            border: 1px solid grey;
+            position: absolute;
+            top: 46%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .long::before {
+            content: '';
+            width: 255px;
+            height: 128px;
+            background: #ffa;
+            position: absolute;
+            left: 55%;
+            z-index: 2;
+        }
+
+        .long::after {
+            content: '';
+            width: 570px;
+            height: 128px;
+            background: linear-gradient(180deg, white, black, white);
+            opacity: 0.25;
+            position: absolute;
+            top: 0%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 3;
+        }
+
+        .text {
+            color: #999999;
+            font-size: 20px;
+            font-family: '微軟正黑體';
+            font-weight: bold;
+            top: 78%;
+            position: absolute;
+        }
+
+        .short {
+            width: 80px;
+            height: 90px;
+            background: linear-gradient(180deg, white, rgb(189, 192, 186), white);
+            border-radius: 10px;
+            border: 1px solid grey;
+            position: absolute;
+            top: 15%;
+            left: -12%;
+            right: 0;
+            z-index: -1;
+        }
+
+        .short::after {
+            content: '';
+            width: 80px;
+            height: 90px;
+            background: linear-gradient(180deg, white, rgb(189, 192, 186), white);
+            border-radius: 10px;
+            border: 1px solid grey;
+            position: absolute;
+            left: 615px;
+            z-index: 1;
+        }
+
+        .push {
+            width: 45px;
+            height: 128px;
+            background: linear-gradient(180deg, white, rgb(189, 192, 186), white);
+            border-radius: 10px;
+            border: 1px solid grey;
+            position: absolute;
+            top: 0%;
+            left: -20%;
+        }
+
+        .line {
+            width: 110px;
+            height: 2px;
+            background: grey;
+            position: absolute;
+            left: 110%;
+            top: 50%;
+            z-index: -3;
+        }
+
+        #table1 {
+            width: 570px;
+            position: absolute;
+            top: 0%;
+            z-index: 3;
+        }
+
+        #table1 td~td {
+            width: 1;
+            height: 15px;
+            border-left: 1px solid grey;
+        }
+
+
+        #table1:last-child {
+            border-right: 1px solid grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="long">
+        <div class="text">Made in Taiwan</div>
+        <div class="middle"></div>
+        <div class="short"></div>
+        <div class="push"></div>
+        <div class="line"></div>
+        <table id="table1">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
